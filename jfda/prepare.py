@@ -386,7 +386,7 @@ def wider_writer_func(q_out, db_names):
       txn_pos.put('size', str(idx_pos))
       idx_neg = fill(txn_neg, q_neg, idx_neg, False)
       txn_neg.put('size', str(idx_neg))
-      idx_pos = fill(txn_part, q_part, idx_part, True)
+      idx_part = fill(txn_part, q_part, idx_part, True)
       txn_part.put('size', str(idx_part))
       break
 
